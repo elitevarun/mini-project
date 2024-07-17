@@ -23,6 +23,16 @@ body {
     max-width: 400px;
     width: 75%;
 }
+.alert{
+    width: 100%;
+    background: rgb(0, 255,106);
+    pading : 10px 20px;
+    border-radius: 5px;
+    text-align : center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
 
 .signup-container h2 {
     margin-bottom: 20px;
