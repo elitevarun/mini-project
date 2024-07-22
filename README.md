@@ -1,0 +1,30 @@
+<form action="StudentDetails" method="post">
+Student NAME: <input type="text" name ="name">
+USN : <input type="text" name="usn">
+Total MARKS <input type="text" name="total">
+<input type="submit" value="submit">
+
+</form>
+
+
+String name=request.getParameter ("name");
+		String usn=request.getParameter ("usn");
+		int total=Integer.parseInt(request.getParameter ("total" ));
+		double percentage=(total/600.0)*100;
+		response.setContentType("text/html");
+		PrintWriter out= response.getWriter();
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>Student marks</title>");
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<h2>Student Details:</h2>");
+		out.println("<p> Name:"+name + "‹</p>"); 
+		out.println("<p>USN: "+usn+"</p>");
+		out.println("<p>Total marks:"+total+"</p›"); 
+		out.println("<p> Percentage: "+percentage+"‹/p›");
+		
+		
+		out.println("</body>");
+		out.println("</html>");
+  
